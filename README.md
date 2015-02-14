@@ -10,7 +10,7 @@ How to compile Japanese docs
 	sudo docker build -t pgsql_doc_ja .
 ```
 
-### 2. Run docker container to run regression tests with V3_4_STABLE branch head
+### 2. Run docker container to compile documents
 
 ```
 	sudo docker run --rm -v $HOME/volum:/var/volum pgsql_doc_ja
