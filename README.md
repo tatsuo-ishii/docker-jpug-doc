@@ -35,4 +35,6 @@ your_gid. You can ommit -u and/or -g option but the result html will
 be owned by root (uid=0, gid=0).
 
 Example:
-sudo ./run.sh -p /home/t-ishii/work/doc-jp/jpug-doc -u 1000 -g 1000
+```
+	sudo ./run.sh -p /home/t-ishii/work/doc-jp/jpug-doc -u 1000 -g 1000
+```
