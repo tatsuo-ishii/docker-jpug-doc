@@ -38,3 +38,18 @@ Example:
 ```
 	sudo ./run.sh -p /home/t-ishii/work/doc-jp/jpug-doc -u 1000 -g 1000
 ```
+
+You can specify git branch by specifying git "branch" by using "-b" option.
+The default is "doc_ja_9_4".
+
+Example:
+```
+	sudo ./run.sh -p /home/t-ishii/work/doc-jp/jpug-doc -u 1000 -g 1000 -b doc_ja_9_4
+```
+You can specify which Linux distribution should be used in the container.
+The default is "ubuntu" (Ubuntu 14.04 LTS). You can also specify CentOS 6 by using "-d centos6".
+
+Example:
+```
+	sudo ./run.sh -p /home/t-ishii/work/doc-jp/jpug-doc -u 1000 -g 1000 -b doc_ja_9_4 -d ubuntu
+```

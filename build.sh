@@ -7,8 +7,14 @@ else
     useradd -u $uid -g $gid pgsql
 fi
 
-git checkout doc_ja_9_4
-./configure
+if [ "$branch" = "" ];then
+    branch=doc_ja_9_4
+fi
+
+git checkout $branch
+#git pull
+./configure --without-zlib --without-readline
+#cat config.log
 cd doc/src/
 make html
 
